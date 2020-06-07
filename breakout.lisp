@@ -201,18 +201,18 @@
             (erase-brick window i j)))))
     (draw-ball window)))
 
-;;(defun breakout-beep (type)
-;;  (declare (ignore type))
-;;
-;; sorry, no sound yet :( ... I could not yet
-;; find a way for lispbuilder-sdl to open my audio
-;; device... too bad!
-;;
-;; (ecase type
-;;  (:PADDLE (tv:simple-beep 128 50))
-;;  (:WALL   (tv:simple-beep 512 50))
-;;  (:BRICK  (tv:simple-beep 1024 50)))
-;;  )
+(defun breakout-beep (type)
+  (declare (ignore type))
+  ;;
+  ;; sorry, no sound yet :( ... I could not yet
+  ;; find a way for lispbuilder-sdl to open my audio
+  ;; device... too bad!
+  ;;
+  ;; (ecase type
+  ;;  (:PADDLE (tv:simple-beep 128 50))
+  ;;  (:WALL   (tv:simple-beep 512 50))
+  ;;  (:BRICK  (tv:simple-beep 1024 50)))
+  )
 
 (defun any-key-was-pressed ()
   (or
